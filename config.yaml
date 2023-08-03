@@ -1,5 +1,6 @@
-email: email@domain.com
-password: yourpassword
+email: info@alexkissijr.com
+password: duRtis-2kymky-dupvez
+
 
 disableAntiLock: False
 
@@ -8,8 +9,8 @@ remote: True
 experienceLevel:
  internship: False
  entry: True
- associate: False
- mid-senior level: False
+ associate: True
+ mid-senior level: True
  director: False
  executive: False
 
@@ -23,18 +24,18 @@ jobTypes:
  volunteer: False
 
 date:
- all time: True
+ all time: False
  month: False
  week: False
- 24 hours: False
+ 24 hours: True
 
 positions:
- #- First position
+ - Sofware Engineer
  #- A second position
  #- A third position
  #- ...
 locations:
- #- First location
+ - United States
  #- A second location
  #- A third location
  #- ...
@@ -44,19 +45,47 @@ distance: 25
 outputFileDirectory: ~/Documents/Applications/EasyApplyBot/EasyApplyBot/
 
 companyBlacklist:
- #- company
- #- company2
+ - jobot
+ - Crossover
+ - Braintrust
 
 titleBlacklist:
- #- word1
- #- word2
+ - .net
+ - CrossOver
+ - Braintrust
+ - gt.school
+ - BlockChain
+ - Android
+ - jobot
+ - Manager
+ - PHP
+ - Systems
+ - Flutter
+ - Solutions
+ - Cobel
+ - Product
+ - Project
+ - Administrator
+ - jobot
+ - WordPress
+ - Enterprise
+ - Architect
+ - Microsoft
+ - Microsft 365
+ - DevOps
+ - Course
+
 
 posterBlacklist:
- #- name1
- #- name2
-
+ - jobot
+ - Crossover
+ - Braintrust
+ - gt.school
+ - BlockChain
+ - Android
+ - jobot
 uploads:
- resume: C:\Users\myDirectory\Resume.pdf
+ resume: C:\Users\Shadow\myDirectory\Alexander_Kissi_Resume_2023.pdf
  # Cover letter is optional
  #coverLetter: C:\Users\myDirectory\CoverLettter.pdf
 
@@ -85,9 +114,9 @@ checkboxes:
  # Have you completed the following level of education: DEGREE TYPE? (yes/no checkbox)
  degreeCompleted:
   - High School Diploma
-  - Bachelor's Degree
+  # - Bachelor's Degree
   # - Associate's Degree
-  - Master's Degree
+  # - Master's Degree
   # - Master of Business Administration
   # - Doctor of Philosophy
   # - Doctor of Medicine
@@ -99,7 +128,7 @@ checkboxes:
 universityGpa: 4.0
 
 # ------------ Additional parameters: salaryMinimum ---------------
-salaryMinimum: 106000
+salaryMinimum: 130000
 
 # ------------ Additional parameters: languages ---------------
 languages:
@@ -144,27 +173,30 @@ experience:
  Writing/Editing: 0
  #python: 0
  #selenium: 0
+ c++: 7
+ iOS: 8
+
  # default to put for any industry/skill that you did not list
- default: 0
+ default: 3
 
 # ------------ Additional parameters: personal info ---------------
 personalInfo:
- First Name: FirstName
- Last Name: LastName
- Phone Country Code: Canada (+1) # See linkedin for your country code, must be exact according to the international platform, i.e. Italy (+39) not Italia (+39)
- Mobile Phone Number: 1234567890
- Street address: 123 Fake Street
- City: Red Deer, Alberta # Include the state/province as well!
- State: YourState
- Zip: YourZip/Postal
- Linkedin: https://www.linkedin.com/in/my-linkedin-profile
- Website: https://www.my-website.com # github/website is interchangeable here
+ First Name: Alexander
+ Last Name: Kissi
+ Phone Country Code: 1 # See linkedin for your country code, must be exact according to the international platform, i.e. Italy (+39) not Italia (+39)
+ Mobile Phone Number: 16464680036
+ Street address: 13273 Fiji Way
+ City: Marina Del Rey # Include the state/province as well!
+ State: Califonia 
+ Zip: 90292
+ Linkedin: https://www.linkedin.com/in/alexkissijr
+ Website: https://www.alexkissijr.com # github/website is interchangeable here
 
 # ------------ Additional parameters: USA employment crap ---------------
 eeo:
- gender: None
- race: None
- vetran: None
- disability: None
+ gender: Male
+ race: Black
+ vetran: no
+ disability: no
  citizenship: yes
  clearance: no
