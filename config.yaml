@@ -10,8 +10,8 @@ experienceLevel:
   entry: True
   associate: True
   mid-senior level: True
-  director: True
-  executive: True
+  director: False
+  executive: False
 
 jobTypes:
   full-time: True
@@ -30,7 +30,10 @@ date:
   24 hours: True
 
 positions:
-  - Software Engineer
+  - Sofware Engineer
+  #- A second position
+  #- A third position
+  #- ...
 locations:
   - United States
   #- A second location
@@ -42,32 +45,48 @@ distance: 25
 outputFileDirectory: ~/Documents/Applications/EasyApplyBot/EasyApplyBot/
 
 companyBlacklist:
+  - jobot
   - Crossover
   - Braintrust
-  - Jobot
-  - Invo Technoligies Inc
 
 titleBlacklist:
-  - Crossover
+  - .net
+  - CrossOver
   - Braintrust
-  - Jobot
   - gt.school
   - BlockChain
   - Android
-  - .Netdeveloper
+  - jobot
+  - Manager
+  - PHP
+  - Systems
+  - Flutter
+  - Solutions
+  - Cobel
+  - Product
+  - Project
+  - Administrator
+  - jobot
+  - WordPress
+  - Enterprise
+  - Architect
+  - Microsoft
+  - Microsft 365
+  - DevOps
+  - Course
 
 posterBlacklist:
+  - jobot
   - Crossover
   - Braintrust
-  - Jobot
-  - Invo Technoligies Inc
-  #- name2
-
+  - gt.school
+  - BlockChain
+  - Android
+  - jobot
 uploads:
-  resume: C:\Users\Createlex\Documents\Alexander_Kissi_Resume_2023.pdf
-
+  resume: C:\Users\Shadow\myDirectory\Alexander_Kissi_Resume_2023.pdf
   # Cover letter is optional
-  coverLetter: C:\Users\Createlex\Documents\Alexander_Kissi_Cover_Letter_2023.pdf
+  #coverLetter: C:\Users\myDirectory\CoverLettter.pdf
 
 # ------------ QA section -------------------
 #What is your expected hourly pay on W2 basis? (You will work with us as a direct employee, not c2c /1099)
@@ -99,7 +118,7 @@ checkboxes:
     - High School Diploma
     # - Bachelor's Degree
     # - Associate's Degree
-    #  Master's Degree
+    # - Master's Degree
     # - Master of Business Administration
     # - Doctor of Philosophy
     # - Doctor of Medicine
@@ -112,8 +131,6 @@ universityGpa: 4.0
 
 # ------------ Additional parameters: salaryMinimum ---------------
 salaryMinimum: 130000
-salaryMinimumRate: 70
-compensation: 140000
 
 # ------------ Additional parameters: languages ---------------
 languages:
@@ -133,7 +150,7 @@ experience:
   Customer Service: 0
   Distribution Design: 0
   Education: 0
-  Engineering: 8
+  Engineering: 0
   Finance: 0
   General Business: 0
   Health Care Provider: 0
@@ -156,20 +173,11 @@ experience:
   Supply Chain: 0
   Training: 0
   Writing/Editing: 0
-  C++: 7
-  SQL: 3
-  AWS: 3
-  Swift: 8
-  iOS: 8
-  Javascript: 5
-  Azure: 3
-  Java: 3
-  C#: 5
-  UnrealEngine: 6
-  Postgres: 3
-  python: 5
-  react: 1
+  #python: 0
   #selenium: 0
+  c++: 7
+  iOS: 8
+
   # default to put for any industry/skill that you did not list
   default: 3
 
@@ -177,10 +185,10 @@ experience:
 personalInfo:
   First Name: Alexander
   Last Name: Kissi
-  Phone Country Code: United States (+1) # See linkedin for your country code, must be exact according to the international platform, i.e. Italy (+39) not Italia (+39)
+  Phone Country Code: 1 # See linkedin for your country code, must be exact according to the international platform, i.e. Italy (+39) not Italia (+39)
   Mobile Phone Number: 16464680036
-  Street address: 13273 Fiji Way Apt 106
-  City: Los Angeles # Include the state/province as well!
+  Street address: 13273 Fiji Way
+  City: Marina Del Rey # Include the state/province as well!
   State: Califonia
   Zip: 90292
   Linkedin: https://www.linkedin.com/in/alexkissijr
@@ -189,7 +197,7 @@ personalInfo:
 # ------------ Additional parameters: USA employment crap ---------------
 eeo:
   gender: Male
-  race: Black African American
+  race: Black
   vetran: no
   disability: no
   citizenship: yes

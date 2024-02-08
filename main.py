@@ -9,12 +9,15 @@ from validate_email import validate_email
 def init_browser():
     browser_options = Options()
     options = ['--disable-blink-features', '--no-sandbox', '--start-maximized', '--disable-extensions',
-               '--ignore-certificate-errors', '--disable-blink-features=AutomationControlled', '--remote-debugging-port=9222']
+               '--ignore-certificate-errors', '--disable-blink-features=AutomationControlled', '--remote-debugging-port=9222', '--headless']
 
     for option in options:
         browser_options.add_argument(option)
 
+<<<<<<< HEAD
     #driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
+=======
+>>>>>>> 740ca80f79552d8e82abc60b59f4c81172ca2f08
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=browser_options)
 
     driver.set_window_position(0, 0)
