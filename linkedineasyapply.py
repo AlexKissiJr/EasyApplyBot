@@ -31,11 +31,15 @@ class LinkedinEasyApply:
         self.checkboxes = parameters.get('checkboxes', [])
         self.university_gpa = parameters['universityGpa']
         self.salary_minimum = parameters['salaryMinimum']
+        self.salary_minimum_rate = parameters['salaryMinimumRate']
+        self.compensation = parameters['compensation']
         self.languages = parameters.get('languages', [])
         self.experience = parameters.get('experience', [])
+        self.pay = parameters.get('pay', [])
         self.personal_info = parameters.get('personalInfo', [])
         self.eeo = parameters.get('eeo', [])
         self.experience_default = self.experience['default']
+        self.pay_default = self.pay['default_pay']
 
 
     def login(self):
@@ -144,7 +148,10 @@ class LinkedinEasyApply:
             except:
                 pass
             try:
-                company = job_tile.find_element(By.CLASS_NAME, 'job-card-container__company-name').text
+                company = job_tile.find_element(By.CLASS_NAME, 'job-card-container__primary-description').text
+                print('Jesus ' + company)
+                # company = job_tile.find_element(By.CLASS_NAME, 'job-card-container__company-name').text
+
             except:
                 pass
             try:
@@ -178,6 +185,7 @@ class LinkedinEasyApply:
                     contains_blacklisted_keywords is False and link not in self.seen_jobs:
                 try:
                     job_el = job_tile.find_element(By.CLASS_NAME, 'job-card-list__title')
+                    #company_blacklist job-card-container__primary-description
                     job_el.click()
 
                     time.sleep(random.uniform(3, 5))
@@ -434,6 +442,19 @@ class LinkedinEasyApply:
                         to_enter = self.personal_info['Linkedin']
                     elif 'website' in question_text or 'github' in question_text or 'portfolio' in question_text:
                         to_enter = self.personal_info['Website']
+                    elif 'compensation' in question_text:
+                        if text_field_type == 'numeric':
+                            to_enter = self.compensation
+                        else:
+                            to_enter = self.compensation
+                    elif 'hourly' in question_text or 'pay' in question_text or 'W2':
+                        print(' we have a qestions about hourly')
+                        if text_field_type == 'numeric':
+                            print(' text feild is numeric')
+                            to_enter = self.salary_minimum_rate
+                        else:
+                            print(' text feild is not numeric ')
+                            to_enter = self.salary_minimum_rate
                     elif 'salary' in question_text:
                         if text_field_type == 'numeric':
                             to_enter = self.salary_minimum
