@@ -26,8 +26,8 @@ jobTypes:
 date:
   all time: False
   month: False
-  week: False
-  24 hours: True
+  week: True
+  24 hours: False
 
 positions:
   - Sofware Engineer
