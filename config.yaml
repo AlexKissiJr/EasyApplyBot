@@ -29,10 +29,10 @@ date:
  24 hours: False
 
 positions:
- #- First position
- #- A second position
- #- A third position
- #- ...
+  - Sofware Engineer
+  - Unreal Engine
+  #- A third position
+  #- ...
 locations:
  #- First location
  #- A second location
@@ -56,9 +56,11 @@ posterBlacklist:
  #- name2
 
 uploads:
- resume: C:\Users\myDirectory\Resume.pdf
- # Cover letter is optional
- #coverLetter: C:\Users\myDirectory\CoverLettter.pdf
+  resume: /Users/alexkissijr/Desktop/Alexander_Kissi_Resume_2024.pdf
+  #resume: C:\Users\Shadow\myDirectory\Alexander_Kissi_Resume_2023.pdf
+
+  # Cover letter is optional
+  #coverLetter: C:\Users\myDirectory\CoverLettter.pdf
 
 
 # ------------ QA section -------------------
@@ -99,7 +101,9 @@ checkboxes:
 universityGpa: 4.0
 
 # ------------ Additional parameters: salaryMinimum ---------------
-salaryMinimum: 106000
+salaryMinimum: 130000
+salaryMinimumRate: 70
+compensation: 140000
 
 # ------------ Additional parameters: languages ---------------
 languages:
